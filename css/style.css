@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/background-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    height: 300px;
+    width: fit-content;
+    /* background: red; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 64px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 44px;
+    color: rgba(53, 92, 128, 1);
+}
+
+.container h1 span {
+    font-weight: 600;
+}
+
+
+.container p {
+    margin-top: 40px;
+    text-align: center;
+    width: 450px;
+    height: 72px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.011em;
+}
+
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.buttons button, input {
+    width: 277px;
+    height: 36px;
+    border-radius: 10px;
+    border: none;
+    cursor: text;
+}
+
+.buttons .button1 {
+    color: gray;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.buttons input:focus {
+    outline: none;
+}
+
+.buttons button.button2 {
+    background-color: rgba(53, 92, 128, 1);
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+
+    .container {
+        height: max-content;
+    }
+
+    .container h1 {
+        font-size: 36px;
+    }
+
+    .container p {
+        margin-top: 15px;
+        margin-bottom: 50px;
+        text-align: center;
+        width: 350px;
+        height: 72px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: -0.011em;
+    }
+
+    div.buttons {
+        margin-top: 30px;
+    }
+
+    .buttons button, input {
+        width: 250px;
+        height: 30px;
+    }
+  }
